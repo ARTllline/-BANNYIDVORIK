@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="OpenImage">
+        <div id="OpenImage-exit"></div>
+        <div id="OpenImage-leftArr"></div>
+        <div id="OpenImage-img"></div>
+        <div id="OpenImage-rightArr"></div>
+    </div>
+    <header id="header">
+        <div class="header-top">
+            <div class="header-top-phone">
+                <img src="img/phone.png" alt="Телефон: ">
+                <span>+380 73 808 0070<br>+380 97 808 0070</span>
+            </div>
+            <span class="header-top-logo">
+                <h1>BANNYI DVORIK</h1>
+            </span>
+            <div class="header-top-lang">
+                <div id="header-top-lang-div-active">RU</div>
+                <div id="header-top-lang-div-second">UA</div>
+                <div id="header-top-lang-div-third">EN</div>
+                <div></div>
+            </div>
+            <div class="header-top-threeLine">
+            </div>
+        </div>
+        <div id="hMenu" class="header-menu">
+            <div id="menu1" class="btn from-bottom header-menu-item">Комнаты</div>
+            <div id="menu2" class="btn from-bottom header-menu-item">Баня</div>
+            <div id="menu3" class="btn from-bottom header-menu-item">Купель</div>
+            <div id="menu4" class="btn from-bottom header-menu-item">Мангал</div>
+            <div id="menu5" class="btn from-bottom header-menu-item">Про нас</div>
+            <div id="menu6" class="btn from-bottom header-menu-item">Контакты</div>
+        </div>
+    </header>
+    <aside id="sideDiv">
+        <div class="aside-top">
+            <div class="escBtn"></div>
+            <div class="aside-top-lang">
+                <div id="aside-top-lang-div-active">RU</div>
+                <div id="aside-top-lang-div-second">UA</div>
+                <div id="aside-top-lang-div-third">EN</div>
+                <div></div>
+            </div>
+            <div class="aside-top-phone">
+                <img src="img/phone.png" alt="Телефон: ">
+                <span>+380 73 808 0070<br>+380 97 808 0070</span>
+            </div>
+        </div>
+        <div id="aMenu" class="aside-menu">
+            <div id="menu1.2" class="btn from-left aside-menu-item">Комнаты</div>
+            <div id="menu2.2" class="btn from-left aside-menu-item">Баня</div>
+            <div id="menu3.2" class="btn from-left aside-menu-item">Купель</div>
+            <div id="menu4.2" class="btn from-left aside-menu-item">Мангал</div>
+            <div id="menu5.2" class="btn from-left aside-menu-item">Про нас</div>
+            <div id="menu6.2" class="btn from-left aside-menu-item">Контакты</div>
+        </div>
+    </aside>
+    <div class="main" id="mainBlock">
+        <div id="main-bgSlider">
+            <div id="main-bgSlider-pic1" class="mainhover"></div>
+            <div id="main-bgSlider-pic2" class="mainhover"></div>
+            <div id="main-bgSlider-pic3" class="mainhover"></div>
+            <div id="main-bgSlider-pic4" class="mainhover"></div>
+
+            <ul id="main-bgSlider-dots">
+                <li id="main-li1"></li>
+                <li id="main-li2"></li>
+                <li id="main-li3"></li>
+                <li id="main-li4"></li>
+            </ul>
+        </div>
+        <div id="main-section_box">
+            <div class="main-section_box-col">
+                <h1>BANNYI DVORIK</h1>
+                <div class="main-section_box-col-undertext"> Банный дворик - уютное место для отдыха </div>
+            </div>
+            <div class="main-section_box-col"></div>
+        </div>
+
+        <div id="main-section_slideicon">
+            <div id="main-section_slideicon-dots"></div>
+        </div>
+    </div>
+    <div class="section-Rooms">
+        <div id="section-Rooms-slider" class="slider">
+            <div id="section-Rooms-slider-img1"></div>
+            <div id="section-Rooms-slider-img2"></div>
+            <div id="section-Rooms-slider-img3"></div>
+            <div id="section-Rooms-slider-img4"></div>
+            <ul id="section-Rooms-slider-dots" class="sliderDots">
+                <li id="Rooms-li1" class="dotActive"></li>
+                <li id="Rooms-li2"></li>
+                <li id="Rooms-li3"></li>
+                <li id="Rooms-li4"></li>
+            </ul>
+        </div>
+        <div class="sectionall-textContainer">
+            <div id="RoomsSection" class="sectionall-textContainer-header AnimHead from-middle">Комнаты</div>
+            <div id="RoomsSection-text" class="sectionall-textContainer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt quisquam sapiente ipsam molestias nam a harum? Doloremque cum repellat quibusdam provident, veritatis, non, facere nihil commodi voluptas reprehenderit quasi itaque!</div>
+        </div>
+    </div>
+    <div class="section-Banya">
+        <div class="sectionall-textContainer">
+            <div id="BanyaSection" class="sectionall-textContainer-header AnimHead from-middle">Баня</div>
+            <div id="BanyaSection-text" class="sectionall-textContainer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt quisquam sapiente ipsam molestias nam a harum? Doloremque cum repellat quibusdam provident, veritatis, non, facere nihil commodi voluptas reprehenderit quasi itaque!</div>
+        </div>
+        <div id="section-Banya-slider" class="slider">
+            <div id="section-Banya-slider-img1"></div>
+            <div id="section-Banya-slider-img2"></div>
+            <div id="section-Banya-slider-img3"></div>
+            <div id="section-Banya-slider-img4"></div>
+            <ul id="section-Banya-slider-dots" class="sliderDots">
+                <li id="Banya-li1" class="dotActive"></li>
+                <li id="Banya-li2"></li>
+                <li id="Banya-li3"></li>
+                <li id="Banya-li4"></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="section-Kupel">
+        <div id="section-Kupel-slider" class="slider">
+            <div id="section-Kupel-slider-img1"></div>
+            <div id="section-Kupel-slider-img2"></div>
+            <div id="section-Kupel-slider-img3"></div>
+            <div id="section-Kupel-slider-img4"></div>
+            <ul id="section-Kupel-slider-dots" class="sliderDots">
+                <li id="Kupel-li1" class="dotActive"></li>
+                <li id="Kupel-li2"></li>
+                <li id="Kupel-li3"></li>
+                <li id="Kupel-li4"></li>
+            </ul>
+        </div>
+        <div class="sectionall-textContainer">
+            <div id="KupelSection" class="sectionall-textContainer-header AnimHead from-middle">Купель</div>
+            <div id="KupelSection-text" class="sectionall-textContainer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt quisquam sapiente ipsam molestias nam a harum? Doloremque cum repellat quibusdam provident, veritatis, non, facere nihil commodi voluptas reprehenderit quasi itaque!</div>
+        </div>
+    </div>
+
+    <div id="imageGrid">
+        <div class="imageGrid-img1"></div>
+        <div class="imageGrid-img2"></div>
+        <div class="imageGrid-img3"></div>
+        <div class="imageGrid-img4"></div>
+        <div class="imageGrid-img5"></div>
+        <div class="imageGrid-img6"></div>
+    </div>
+
+    <div class="map-section">
+        <div id="map"></div>
+        <div class="map-section-frame">
+            <h3 id="Adress">Украина, Молодежное, Одесская область, Овидиопольский район</h3>
+            <div class="map-section-frame-text">
+                <img src="img/building.png">
+                <p id="trip1">г. Иличёвск - 3км / 5 мин.</p>
+            </div>
+            <div class="map-section-frame-text">
+                <img src="img/sea.png">
+                <p id="trip2">Море - 1км / 3 мин.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-upper">
+            <div class="footer-upper-phone">
+                <img src="img/phone.png" alt="Телефон: ">
+                <span>+380 73 808 0070<br>+380 97 808 0070</span>
+            </div>
+            <span class="footer-upper-logo">
+                <h1>BANNYI DVORIK</h1>
+            </span>
+            <div class="footer-upper-lang">
+                <a href=" https://www.instagram.com/bannyi_dvorik/"><img src="img/instaIcon.png"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+
+        </div>
+    </footer>
+
+    <script src="mapLoader.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

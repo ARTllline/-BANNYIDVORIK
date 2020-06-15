@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/resources/demos/style.css">   -->
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet"
+        type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: flex-start;
+            background: rgb(207, 207, 207);
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+            padding-left: 10%;
+            margin: 30px;
+            width: 700px;
+        }
+
+        main>div {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        main>div>label {
+            margin-right: 10px;
+            width: 270px;
+        }
+
+        #departureRange {
+            width: 250px;
+            margin: 0 30px;
+        }
+
+        #search {
+            width: 200px;
+            height: 40px;
+            margin-top: 40px;
+            align-self: center;
+        }
+
+        #accordion {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div><label for="country">Cтрана: </label><input id="country" class="country" /></div>
+        <div><label for="city">Город: </label><input id="city" class="city" /></div>
+        <div><label for="hotel">Отель: </label><input id="hotel" /></div>
+        <div><label for="departureCountry">Страна отправления: </label><input id="departureCountry" class="country" />
+        </div>
+        <div><label for="departureCity">Город отправления: </label><input id="departureCity" class="city" /></div>
+        <div><label for="departureRange">Диапозон цен: </label><span id="startPrice">100</span>
+            <div id="departureRange"></div><span id="endPrice">5000</span>
+        </div>
+        <div><label for="departureDays">Количество дней: </label><input id="departureDays" value="5" /></div>
+        <div><label for="departureDate">Дата отправления: </label><input id="departureDate" /></div>
+        <button id="search">Поиск</button>
+    </main>
+
+    <!-- <div id="test"></div> -->
+    <div id="accordion"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
